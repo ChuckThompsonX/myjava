@@ -28,9 +28,9 @@ public class MapifyFileData {
 		
 		// order map
 		map = map.entrySet().stream()
-                .sorted(Map.Entry.comparingByKey()) // order by key
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
-                        (e1, e2) -> e1, LinkedHashMap::new)); // recreate collection as linked hash map
+                		.sorted(Map.Entry.comparingByKey()) // order by key
+                		.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue,
+                        		(e1, e2) -> e1, LinkedHashMap::new)); // can use TreeMap here w/o sorted op
 		
 		map.forEach((k,v) -> {System.out.println(k + " " + v);});
 	}
