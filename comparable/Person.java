@@ -2,7 +2,7 @@
  * Comparable interface is for natural ordering.
  * Implemented in Wrapper classes, String & Enum.
  */
-package com.planet.test;
+package myjava.comparable;
 
 public class Person implements Comparable<Person> {
 
