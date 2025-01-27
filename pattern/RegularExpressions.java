@@ -1,4 +1,4 @@
-package com.planet.patterns;
+package myjava.pattern.patterns;
 
 import java.util.regex.Pattern;
 import java.util.regex.Matcher;
