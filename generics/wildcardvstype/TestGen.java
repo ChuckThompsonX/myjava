@@ -41,8 +41,7 @@ public class TestGen {
 		System.out.println(obj.getClass().getTypeName());
 	}
 
-	// use type T when you are actively working with the type or when you have a
-	// return of the type
+	// use type T when you are actively working with the type or when you have a return of the type
 	private static <T> void printTheList(List<T> list) {
 		T t = list.getFirst();
 		System.out.println(t.getClass().getTypeName());
