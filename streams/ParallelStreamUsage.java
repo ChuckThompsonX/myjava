@@ -11,12 +11,12 @@ public class ParallelStreamUsage {
 		// sequential Stream
 		System.out.println("Sequential Stream:");
 		nums.stream()
-				.forEach(n -> System.out.println(n + " " + Thread.currentThread().getName()));
+			.forEach(n -> System.out.println(n + " " + Thread.currentThread().getName()));
 
 		// parallel Stream
 		System.out.println("\nParallel Stream:");
 		nums.parallelStream()
-				.forEach(n -> System.out.println(n + " " + Thread.currentThread().getName()));
+			.forEach(n -> System.out.println(n + " " + Thread.currentThread().getName()));
 	}
 }
 
