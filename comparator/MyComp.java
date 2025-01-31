@@ -10,14 +10,11 @@ public class MyComp implements Comparator<String> {
     
     @Override
     public int compare(String a, String b) {
-        String aStr, bStr;
+        String aStr = a;
+        String bStr = b;
         
-        aStr = a;
-        bStr = b;
-        
-        // Reverse the comparison
-        //return bStr.compareTo(aStr);
-        return aStr.compareTo(bStr);
+        // reverse the comparison
+        return bStr.compareTo(aStr); // return aStr.compareTo(bStr);
     }
     
     // Don't need to override equals
