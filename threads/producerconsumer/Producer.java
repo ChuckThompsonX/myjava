@@ -1,4 +1,4 @@
-package producerconsumer;
+package myjava.threads.producerconsumer;
 
 public class Producer implements Runnable {
     
