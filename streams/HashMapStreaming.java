@@ -36,20 +36,21 @@ public class HashMapStreaming {
 
 		// filter entries where the value is greater than 30
 		Map<Integer, String> filteredMap = hmap.entrySet().stream()
-		    .filter(entry -> entry.getKey() > 30)
-		    .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
+				.filter(entry -> entry.getKey() > 30)
+				.collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
 		
 		System.out.println("Keys > 30: " + filteredMap);
 		
 		// find the entry with any value of "Alpha"
 		Optional<Map.Entry<Integer, String>> entry = hmap.entrySet().stream()
-		    .filter(e -> e.getValue().equals("Alpha"))
-		    .findFirst();
+				.filter(e -> e.getValue().equals("Alpha"))
+				.findFirst();
 		
 		System.out.println("Find filter: " + entry);
 	
 		// concatenate all the values
-		String all = hmap.values().stream().reduce("", String::concat);
+		String all = hmap.values().stream()
+				.reduce("", String::concat);
 		System.out.println("Concatenate all values: " + all);
 	}
 }
