@@ -1,4 +1,4 @@
-package filter;
+package myjava.filter;
 
 public class Developer {
 
