@@ -26,9 +26,9 @@ public class StreamVsLoop {
 		System.out.println(sum);
 		
 		// stream performs same operations in a more declarative way:
-		//	- filter keeps only the even numbers
-		//	- mapToInt converts the stream of Integer objects to a stream of primitive int values
-		//	- sum adds up the int values
+		// - filter keeps only the even numbers
+		// - mapToInt converts the stream of Integer objects to a stream of primitive int values
+		// - sum adds up the int values
 		sum = numbers.stream()
 			.filter(number -> number % 2 == 0)
 		        .mapToInt(Integer::intValue)
