@@ -11,9 +11,9 @@ public class SumOddNumbers {
 		
 		// sum of all odd numbers
 		int sum = numbers.stream()
-				.filter(x -> x % 2 != 0) // returns plain old stream of odd numbers
-				.mapToInt(Integer::intValue) // you need an Int stream
-				.sum(); // in order to do this sum
+			.filter(x -> x % 2 != 0) // returns plain old stream of odd numbers
+			.mapToInt(Integer::intValue) // you need an Int stream
+			.sum(); // in order to do this sum
 		
 		System.out.println(sum);
 	}
