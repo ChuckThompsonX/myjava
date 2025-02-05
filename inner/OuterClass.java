@@ -6,13 +6,13 @@ public class OuterClass {
 	
 	class InnerClass {
 
-        public int x = 1;
-        public int y = 10;
+        	public int x = 1;
+        	public int y = 10;
 
-        void methodInFirstLevel(int x) {
-            System.out.println("x = " + x);
-            System.out.println("this.x = " + this.x);
-            System.out.println("OuterClass.this.x = " + OuterClass.this.x);
-        }
-    }
+        	void methodInFirstLevel(int x) {
+        		System.out.println("x = " + x);
+        		System.out.println("this.x = " + this.x);
+        		System.out.println("OuterClass.this.x = " + OuterClass.this.x);
+        	}
+	}
 }
