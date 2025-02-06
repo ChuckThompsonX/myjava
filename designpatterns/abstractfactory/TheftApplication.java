@@ -1,14 +1,7 @@
-package abstractfactory;
+package myjava.abstractfactory;
 
-/**
- *
- * @author Chuck
- */
 public class TheftApplication {
 
-    /**
-     * @param args the command line arguments
-     */
     public static void main(String... args) {
         
         HouseFactory houseFactory;
