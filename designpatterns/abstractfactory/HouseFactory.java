@@ -1,9 +1,5 @@
-package abstractfactory;
+package myjava.abstractfactory;
 
-/**
- *
- * @author Chuck
- */
 public class HouseFactory {
     
     public void createBulb() {
