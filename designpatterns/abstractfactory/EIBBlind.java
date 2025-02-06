@@ -1,9 +1,5 @@
-package abstractfactory;
+package myjava.abstractfactory;
 
-/**
- *
- * @author Chuck
- */
 public class EIBBlind extends Blind {
     
     EIBBlind() {
