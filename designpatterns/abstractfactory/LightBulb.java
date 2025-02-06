@@ -1,9 +1,5 @@
-package abstractfactory;
+package myjava.abstractfactory;
 
-/**
- *
- * @author Chuck
- */
 public class LightBulb {
     
     String name;
@@ -21,5 +17,4 @@ public class LightBulb {
         this.serialNumber = serialNumber;
         this.watts = watts;
     }
-    
 }
