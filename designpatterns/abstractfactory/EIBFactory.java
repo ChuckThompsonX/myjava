@@ -1,9 +1,5 @@
-package abstractfactory;
+package myjava.abstractfactory;
 
-/**
- *
- * @author Chuck
- */
 public class EIBFactory extends HouseFactory {
     
     LightBulb eibBulb;
@@ -20,5 +16,4 @@ public class EIBFactory extends HouseFactory {
         // Implementation specific code
         eibBlind = new EIBBlind("1234", "EIBBlinders");
     }
-
 }
