@@ -1,4 +1,4 @@
-package box;
+package myjava.inheritance;
 
 public class Box {
     
