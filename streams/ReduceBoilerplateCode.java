@@ -11,6 +11,7 @@ public class ReduceBoilerplateCode {
 		
 	        List<String> names = Arrays.asList("Doug", "Susan", "Larry");
 	
+		// won't work if you use List.of above
 	        Collections.sort(names, new Comparator<>() {
 	            @Override
 	            public int compare(String n1, String n2) {
