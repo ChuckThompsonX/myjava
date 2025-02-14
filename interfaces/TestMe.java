@@ -1,4 +1,4 @@
-package com.java.interfaces;
+package myjava.interfaces;
 
 public class TestMe {
 
