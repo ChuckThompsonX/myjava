@@ -14,8 +14,8 @@ public class EchoBytes {
 			int bytesRead = stream.read(bytes);
 			System.out.println(bytesRead);
 			
-			for (int idx = 0; idx < bytes.length; idx++) {
-				char ch = (char) bytes[idx];
+			for (int i = 0; i < bytes.length; i++) {
+				char ch = (char) bytes[i];
 				System.out.print(ch);
 			}
 			
