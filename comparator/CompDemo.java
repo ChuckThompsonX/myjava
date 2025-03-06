@@ -8,13 +8,9 @@ public class CompDemo {
         // create a tree set
         TreeSet<String> ts = new TreeSet<>(new MyComp());
         
-        // Add elements to the tree set
-        ts.add("C");
-        ts.add("A");
-        ts.add("B");
-        ts.add("B");
-        ts.add("E");
-        ts.add("F");
+        // add elements to the tree set
+        ts.add("C");ts.add("A");ts.add("B");
+        ts.add("B");ts.add("E");ts.add("F");
         ts.add("D");
         
         // display the elements
