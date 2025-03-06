@@ -10,7 +10,7 @@ public class EnumMapExample {
 	}
 
 	public static void main(String args[]) {
-		EnumMap<STATE, String> stateMap = new EnumMap<STATE, String>(STATE.class);
+		EnumMap<STATE, String> stateMap = new EnumMap<>(STATE.class);
 
 		stateMap.put(STATE.RUNNING, "Program is running.");
 		stateMap.put(STATE.WAITING, "Program is waiting.");
