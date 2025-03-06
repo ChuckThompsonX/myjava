@@ -45,15 +45,15 @@ class Person implements Cloneable {
 		try {
 			Address address = new Address("New York");
 			Person original = new Person("Alice", 30, address);
-			Person cloned = (Person) original.clone();
+			Person person = (Person) original.clone();
 			System.out.println("Original: " + original);
-			System.out.println("Cloned: " + cloned);
+			System.out.println("Cloned: " + person);
 			// modify the address in the cloned object does not modify address for the original object
-			cloned.address.city = "Los Angeles";
+			person.address.city = "Los Angeles";
 
 			System.out.println("After modifying cloned object:");
 			System.out.println("Original: " + original);
-			System.out.println("Cloned: " + cloned);
+			System.out.println("Cloned: " + person);
 		} 
 		catch (CloneNotSupportedException e) {
 			e.printStackTrace();
