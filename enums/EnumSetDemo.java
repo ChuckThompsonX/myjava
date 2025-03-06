@@ -18,11 +18,8 @@ public class EnumSetDemo {
 			this.b = b; 
 		} 
 		
-		@SuppressWarnings("unused")
 		public int getR() { return r; }
-		@SuppressWarnings("unused")
 		public int getG() { return g; }
-		@SuppressWarnings("unused")
 		public int getB() { return b; } 
 	}
 	
