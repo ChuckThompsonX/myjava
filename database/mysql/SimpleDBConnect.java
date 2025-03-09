@@ -8,7 +8,7 @@ public class SimpleDBConnect {
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
-			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "pwdpwd");
+			Connection conn = DriverManager.getConnection("jdbc:mysql://localhost:3306/test", "root", "xxxxxxxxxx");
 			Statement stmt = conn.createStatement();
 			String sql = "select name from test";
 			ResultSet rs = stmt.executeQuery(sql);
