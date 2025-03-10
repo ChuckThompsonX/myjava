@@ -6,38 +6,38 @@ public class QStructure {
     boolean valueSet = false;
     
     synchronized int get() {
-    //int get() {
         while (!valueSet) {
             try {
-                // Tell calling thread to give up monitor and go to sleep
+                // tell calling thread to give up monitor and go to sleep
                 // until some other thread enters the same monitor and calls notify()
                 wait(); 
-            } catch (InterruptedException e) {
-                System.out.println("InterruptedException caught");
+            } 
+            catch (InterruptedException e) {
+                System.out.println("InterruptedException caught " + e.getMessage());
             }
         }
         
         System.out.println("Got: " + n);
         valueSet = false;
-        notify(); // Wakes up thread that called wait on same object
+        notify(); // wakes up thread that called wait on same object
         return n;
     }
     
     synchronized void put(int n) {
-    //void put(int n) {
         while (valueSet) {
             try {
-                // Tell calling thread to give up monitor and go to sleep
+                // tell calling thread to give up monitor and go to sleep
                 // until some other thread enters the same monitor and calls notify()
                 wait();
-            } catch (InterruptedException e) {
-                System.out.println("InterruptedException caught");
+            } 
+            catch (InterruptedException e) {
+                System.out.println("InterruptedException caught " + e.getMessage());
             }
         }
         
         this.n = n;
         valueSet = true;
         System.out.println("Put: " + n);
-        notify(); // Wakes up thread that called wait on same object
+        notify(); // wakes up thread that called wait on same object
     }
 }
