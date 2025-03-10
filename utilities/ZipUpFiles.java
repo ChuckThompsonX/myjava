@@ -11,8 +11,8 @@ import java.util.zip.ZipOutputStream;
 
 public class ZipUpFiles {
 
-	private static final String OUTPUT_ZIP_FILE = "C:\\Temp\\zip\\ZippedFile.zip";
 	private static final String SOURCE_FOLDER = "C:\\Temp\\temp";
+	private static final String OUTPUT_ZIP_FILE = SOURCE_FOLDER + "\\ZippedFile.zip";
 
 	List<String> fileList;
 
@@ -58,7 +58,8 @@ public class ZipUpFiles {
 			zos.closeEntry();
 			zos.close();
 			System.out.println("Done");
-		} catch (IOException ex) {
+		} 
+		catch (IOException ex) {
 			ex.printStackTrace();
 		}
 	}
