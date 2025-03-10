@@ -18,7 +18,8 @@ public class Consumer implements Runnable {
 
             try {
                 Thread.sleep(500);
-            } catch (InterruptedException ex) {
+            } 
+            catch (InterruptedException ex) {
                 // Do nothing
             }
         }
