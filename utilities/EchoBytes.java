@@ -19,7 +19,8 @@ public class EchoBytes {
 				System.out.print(ch);
 			}
 			
-		} catch (IOException e) {
+		} 
+		catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
