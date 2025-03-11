@@ -33,10 +33,10 @@ public class UnboundedWildcards {
 
 	// Any concrete type A, List<A> is a sub-type of List<?>, you can use printList to print a list of any type
 	public static void printList(List<?> list) {
-	    for (Object elem : list) {
-	        System.out.print(elem + " ");
+	    	for (Object elem : list) {
+	        	System.out.print(elem + " ");
 		}
 	    
-	    System.out.println();
+	    	System.out.println();
 	}
 }
