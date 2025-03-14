@@ -21,7 +21,6 @@ public class SimpleDBConnect {
 			rs.close();
 			stmt.close();
 			conn.close();
-
 		} 
 		catch (Exception e) {
 			e.printStackTrace();
