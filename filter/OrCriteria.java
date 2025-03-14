@@ -18,10 +18,11 @@ public class OrCriteria implements Criteria {
       List<Developer> otherCriteriaItems = otherCriteria.meetCriteria(developers);
 
       for (Developer developer : otherCriteriaItems) {
-         if(!firstCriteriaItems.contains(developer)){
+         if (!firstCriteriaItems.contains(developer)){
             firstCriteriaItems.add(developer);
          }
-      }	
+      }
+      
       return firstCriteriaItems;
    }
 }
