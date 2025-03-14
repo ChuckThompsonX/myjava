@@ -8,7 +8,7 @@ public class CriteriaExperience implements Criteria {
    @Override
    public List<Developer> meetCriteria(List<Developer> developers) {
       
-      List<Developer> singlePersons = new ArrayList<Developer>(); 
+      List<Developer> singlePersons = new ArrayList<>(); 
       
       for (Developer developer : developers) {
          if (developer.getExperience().equalsIgnoreCase("10")){
