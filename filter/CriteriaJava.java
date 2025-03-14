@@ -7,13 +7,14 @@ public class CriteriaJava implements Criteria {
 
    @Override
    public List<Developer> meetCriteria(List<Developer> developers) {
-      List<Developer> malePersons = new ArrayList<Developer>(); 
+      List<Developer> malePersons = new ArrayList<>(); 
       
       for (Developer developer : developers) {
-         if(developer.getLanguage().equalsIgnoreCase("JAVA")){
+         if (developer.getLanguage().equalsIgnoreCase("JAVA")){
             malePersons.add(developer);
          }
       }
+      
       return malePersons;
    }
 }
