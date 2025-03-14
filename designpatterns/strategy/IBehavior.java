@@ -1,12 +1,5 @@
-/**
- * IBehavior
- */
 package com.java.strategy;
 
-/**
- * @author Chuck
- *
- */
 public interface IBehavior {
 
 	public void move();
