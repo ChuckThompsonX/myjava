@@ -4,12 +4,12 @@ public class TestEmployeeEmail {
 
 	public static void main(String[] args) {
 		
-		// Without DI
+		// without DI
 		
 		Employee e1 = new Employee();
 		e1.sendEmail("This is my first message.");
 		
-		// With DI 
+		// with DI 
 
 		Email email = new Email();
 		Employee e2 = new Employee(email);
