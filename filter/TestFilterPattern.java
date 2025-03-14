@@ -43,7 +43,6 @@ public class TestFilterPattern {
 	   }
 
 	   public static void printPersons(List<Developer> developers){
-	   
 	      for (Developer developer : developers) {
 	         System.out.println("Developer : [ Name : " + developer.getName() + ", Language : " + developer.getLanguage() + ", Experience : " + developer.getExperience() + " ]");
 	      }
