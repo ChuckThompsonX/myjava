@@ -12,18 +12,11 @@ public class EmployeeDI {
 		this.email.sendMessage(message);
 	}
 
-	/**
-	 * @return the email
-	 */
 	public Email getEmail() {
 		return email;
 	}
 
-	/**
-	 * @param email the email to set
-	 */
 	public void setEmail(Email email) {
 		this.email = email;
 	}
-
 }
