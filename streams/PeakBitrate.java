@@ -51,7 +51,7 @@ public class PeakBitrate {
 
 	public static void main(String... args) {
 		
-		// Example stream log: {start, end, bit rate}
+		// example stream log: {start, end, bit rate}
 		List<int[]> streams = Arrays.asList(
 			new int[] { 1, 4, 100 }, // stream 1 starts at 1, ends at 4, bit rate 100
 			new int[] { 2, 5, 150 }, 
