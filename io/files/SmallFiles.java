@@ -40,7 +40,8 @@ public class SmallFiles {
 
 			System.out.println("Done!");
 			
-		} catch (IOException ioe) {
+		} 
+		catch (IOException ioe) {
 			ioe.printStackTrace();
 		}
 	}
