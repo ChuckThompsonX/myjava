@@ -7,10 +7,10 @@ public class FunctionExample {
 
 	public static void main(String... args) {
 		
-		// Function interface defined as Function<T, R>
+		// function interface defined as Function<T, R>
 		// T - type of the input to the function
 		// R - type of the result
-		// Has a single abstract method R apply(T t);
+		// has a single abstract method R apply(T t);
 		
 		// takes string input and returns its lower case version as output
 		Function<String, String> toLower = str -> str.toLowerCase();
