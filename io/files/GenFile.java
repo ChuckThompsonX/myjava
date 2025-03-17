@@ -43,22 +43,10 @@ public class GenFile {
 		System.out.println("Done!");
 	}
 
-	/**
-	 * 
-	 * @param bits
-	 * @param shift
-	 * @return
-	 */
 	public static byte rotateRight(byte bits, int shift) {
 		return (byte) (((bits & 0xff) >>> shift) | ((bits & 0xff) << (Byte.SIZE - shift)));
 	}
 
-	/**
-	 * 
-	 * @param bits
-	 * @param shift
-	 * @return
-	 */
 	public static byte rotateLeft(byte bits, int shift) {
 		return (byte) (((bits & 0xff) << shift) | ((bits & 0xff) >>> (Byte.SIZE - shift)));
 	}
