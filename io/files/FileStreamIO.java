@@ -26,7 +26,8 @@ public class FileStreamIO {
 			while ((c = fin.read()) != -1) {
 				System.out.print((char) c);
 			}			
-		} catch (IOException ioe) {
+		} 
+		catch (IOException ioe) {
 		    ioe.printStackTrace();
 		}
 		
@@ -35,7 +36,8 @@ public class FileStreamIO {
 		try (FileOutputStream fout = new FileOutputStream(file2)) {
 			byte[] b = s.getBytes();
 			fout.write(b);
-		} catch (IOException ioe) {
+		} 
+		catch (IOException ioe) {
 		    ioe.printStackTrace();
 		}
 	}
