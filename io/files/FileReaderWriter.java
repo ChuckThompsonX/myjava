@@ -25,7 +25,8 @@ public class FileReaderWriter {
 			while ((c = fr.read()) != -1) {
 				System.out.print((char) c);
 			}
-		} catch (IOException ioe) {
+		} 
+		catch (IOException ioe) {
 		    ioe.printStackTrace();
 		}
 
@@ -33,7 +34,8 @@ public class FileReaderWriter {
 		String s = "Write this message to file 123.";
 		try (FileWriter fw = new FileWriter(file2)) {
 			fw.write(s);
-		} catch (IOException ioe) {
+		} 
+		catch (IOException ioe) {
 		    ioe.printStackTrace();
 		}
 	}
