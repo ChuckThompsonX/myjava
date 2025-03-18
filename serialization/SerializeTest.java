@@ -8,26 +8,27 @@ import java.io.ObjectOutputStream;
 public class SerializeTest {
 
 	public static void main(String... args) {
-		// Set storage
+		// set storage
 		String root = File.listRoots()[0].getAbsolutePath();
 		String fileName = root + File.separator + "temp" + File.separator;
 		fileName += "employee.ser";
 		
-		// Give object state
+		// give object state
 		Employee emp = new Employee();
 		emp.setId(101);
 		emp.setName("Chuck");
 		emp.setSalary(50000);
 
 		try {
-			// Serialize to file
+			// serialize to file
 			FileOutputStream fos = new FileOutputStream(fileName);
 			ObjectOutputStream oos = new ObjectOutputStream(fos);
 			oos.writeObject(emp);
 			fos.close();
 
 			System.out.println("emp Obj->" + emp);
-		} catch (IOException e) {
+		} 
+		catch (IOException e) {
 			e.printStackTrace();
 		}
 	}
