@@ -20,7 +20,7 @@ public class StaticDemo {
 		System.out.println("MESSAGE");
 	}
 	
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		
 		System.out.println("MAIN");
 		
