@@ -1,4 +1,4 @@
-package myjava.threads;
+package threading;
 
 public class EvenOddNumbers {
 
@@ -16,8 +16,9 @@ public class EvenOddNumbers {
 				synchronized (lock) {
 					while (!isEvenTurn) {
 						try {
-							// release lock and enter waiting state
 							System.out.println("Even thread waiting");
+							// release lock and enter waiting state
+							// and remain in this state until another thread calls notify()
 							lock.wait();
 						} catch (InterruptedException e) {
 							System.out.println(e.getMessage());
@@ -25,7 +26,7 @@ public class EvenOddNumbers {
 					}
 					System.out.println("Even Number from evenThread: " + i);
 					isEvenTurn = false;
-					// thread remains in waiting state until another thread calls notify() on same object
+					// signal to a waiting thread that the condition it was waiting for might have been met
 					lock.notify();
 				}
 			}
@@ -39,8 +40,9 @@ public class EvenOddNumbers {
 				synchronized (lock) {
 					while (isEvenTurn) {
 						try {
-							// release lock and enter waiting state
 							System.out.println("Odd thread waiting");
+							// release lock and enter waiting state
+							// and remain in this state until another thread calls notify()
 							lock.wait();
 						} catch (InterruptedException e) {
 							System.out.println(e.getMessage());
@@ -48,7 +50,7 @@ public class EvenOddNumbers {
 					}
 					System.out.println("Odd Number from oddThread: " + i);
 					isEvenTurn = true;
-					// thread remains in waiting state until another thread calls notify() on same object
+					// signal to a waiting thread that the condition it was waiting for might have been met
 					lock.notify();
 				}
 			}
