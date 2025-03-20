@@ -1,4 +1,4 @@
-package com.test;
+package myjava.test;
 
 public class Bytes {
     public static void main(String[] args) {
