@@ -1,4 +1,4 @@
-package myjava.test;
+package com.test;
 
 public class Bytes {
     public static void main(String[] args) {
@@ -9,7 +9,7 @@ public class Bytes {
         data[2] = 30;
 
         for (byte b : data) {
-            System.out.println(b);
+            System.out.print(b + " ");
         }
 
         byte myByte = 100;
