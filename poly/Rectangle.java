@@ -8,7 +8,7 @@ public class Rectangle extends Figure {
 
     @Override
     double area() {
-        System.out.println("Inside Area for Rectangle.");
+        System.out.println("Area for Rectangle.");
         return dim1 * dim2;
     }
 }
