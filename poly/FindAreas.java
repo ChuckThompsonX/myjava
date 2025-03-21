@@ -8,13 +8,13 @@ public class FindAreas {
         Rectangle r = new Rectangle(10, 8);
         Triangle t = new Triangle(10, 8);
         
-        Figure figref = r;
-        System.out.println("Area is " + figref.area());
+        Figure figure = r;
+        System.out.println("Area is " + figure.area());
 
         figref = t;
-        System.out.println("Area is " + figref.area());
+        System.out.println("Area is " + figure.area());
 
         figref = f;
-        System.out.println("Area is " + figref.area());
+        System.out.println("Area is " + figure.area());
     }
 }
