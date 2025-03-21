@@ -11,7 +11,7 @@ public class Figure {
     }
 
     double area() {
-        System.out.println("Area for Figure is undefined.");
+        System.out.println("Undefined figure area.");
         return 0;
     }
 }
