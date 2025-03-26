@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 public class StringParsing {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		
 		// regular expressions for complex pattern matching
         	String str = "Email: joe.doe@example.com";
