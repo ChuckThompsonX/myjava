@@ -10,7 +10,7 @@ import java.util.stream.Stream;
 
 public class MapifyFileData {
 
-	public static void main(String... args) throws IOException {
+	public static void main(String[] args) throws IOException {
 		
 		// read comma delimited data rows from file
 		Stream<String> lines = Files.lines(Paths.get("employees.txt"));
