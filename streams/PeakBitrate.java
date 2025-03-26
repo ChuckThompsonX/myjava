@@ -49,7 +49,7 @@ public class PeakBitrate {
 		return maxBitrate;
 	}
 
-	public static void main(String... args) {
+	public static void main(String[] args) {
 		
 		// example stream log: {start, end, bit rate}
 		List<int[]> streams = Arrays.asList(
