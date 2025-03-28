@@ -67,7 +67,6 @@ class BinarySearchTree {
         	root = tree.insert(root, 40);
         	root = tree.insert(root, 70);
         	root = tree.insert(root, 15);
-        	root = tree.insert(root, 60);
         	root = tree.insert(root, 80);
         	root = tree.insert(root, 45);
         
