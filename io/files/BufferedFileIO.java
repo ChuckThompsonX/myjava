@@ -18,7 +18,7 @@ import java.nio.file.Paths;
 
 public class BufferedFileIO {
 
-	public static void main(String... args) {
+	public static void main(String[] args) {
 		
 		Charset charset = Charset.forName("US-ASCII");
 		String root = File.listRoots()[0].getAbsolutePath();
