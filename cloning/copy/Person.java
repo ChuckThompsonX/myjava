@@ -29,7 +29,7 @@ class Person implements Cloneable {
 		return "Person{name='" + name + "', age=" + age + "}";
 	}
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		try {
 			Person original = new Person("Alice", 30);
 			Person cloned = (Person) original.clone();
