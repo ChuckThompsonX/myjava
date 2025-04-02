@@ -4,8 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class TestFilterPattern {
-	   public static void main(String[] args) {
-	      List<Developer> developers = new ArrayList<Developer>();
+	   public static void main(String... args) {
+	      List<Developer> developers = new ArrayList<>();
 
 	      developers.add(new Developer("Robert","JAVA", "10"));
 	      developers.add(new Developer("John", "CPP", "8"));
