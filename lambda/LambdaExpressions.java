@@ -7,7 +7,7 @@ import java.util.function.IntFunction;
 
 public class LambdaExpressions {
 
-	public static void main(String... args) {
+	public static void main(String[] args) {
 
 		// ----------------------------------------
 		// Factorial
