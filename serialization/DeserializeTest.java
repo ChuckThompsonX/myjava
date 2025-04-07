@@ -7,7 +7,7 @@ import java.io.ObjectInputStream;
 
 public class DeserializeTest {
 
-	public static void main(String... args) {
+	public static void main(String[] args) {
 		// select object location
 		String root = File.listRoots()[0].getAbsolutePath();
 		String fileName = root + File.separator + "temp" + File.separator;
