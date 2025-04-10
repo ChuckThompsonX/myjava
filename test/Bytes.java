@@ -1,7 +1,7 @@
 package com.test;
 
 public class Bytes {
-    public static void main(String[] args) {
+    public static void main(String... args) {
 
         byte[] data = new byte[3]; // {10, 20, 30};
         data[0] = 10;
