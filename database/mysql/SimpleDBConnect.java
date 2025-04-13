@@ -4,7 +4,7 @@ import java.sql.*;
 
 public class SimpleDBConnect {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 
 		try {
 			Class.forName("com.mysql.jdbc.Driver");
