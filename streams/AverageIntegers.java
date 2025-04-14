@@ -5,7 +5,7 @@ import java.util.List;
 
 public class AverageIntegers {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		
 		// average of a list of integers
 		List<Integer> intList = Arrays.asList(33, 26, 78, 49, 2, 93);
