@@ -11,7 +11,7 @@ import java.util.stream.Stream;
 
 public class FileWriteRead {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 
 		String[] words = { "hello", "refer", "world", "level" };
 
