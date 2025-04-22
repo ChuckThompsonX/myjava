@@ -8,7 +8,7 @@ import java.sql.Statement;
 
 public class PostgresJDBC {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 
 		try {
 			Class.forName("org.postgresql.Driver");
