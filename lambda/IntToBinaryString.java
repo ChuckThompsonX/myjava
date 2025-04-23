@@ -4,7 +4,7 @@ import java.util.function.Function;
 
 public class IntToBinaryString {
 
-	public static void main(String[] args) {
+	public static void main(String... args) {
 		
 		// generic functional interface provided by Java
 		// 1st generic param is integer value passed into lambda function
